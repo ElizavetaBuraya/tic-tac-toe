@@ -46,6 +46,7 @@ class TicTacToe {
     }
 
     getWinner() {
+      //monkeycode, must be rewritten
       if (
         (this.field[0][0] == this.field[0][1] &&
         this.field[0][0] == this.field[0][2] &&
