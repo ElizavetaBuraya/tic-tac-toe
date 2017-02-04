@@ -7,6 +7,7 @@ class TicTacToe {
       for(var i = 0; i < 3; i++)
       {
         this.field[i] = [];
+
         for(var j = 0; j < 3; j++)
         {
           this.field[i][j] = null;
@@ -40,13 +41,12 @@ class TicTacToe {
       {
         return true;
       }
-      else {
+      else
          return false;
-       }
     }
 
     getWinner() {
-      //monkeycode, must be rewritten
+      //to be rewritten...
       if (
         (this.field[0][0] == this.field[0][1] &&
         this.field[0][0] == this.field[0][2] &&
@@ -76,13 +76,13 @@ class TicTacToe {
       {
           return this.currentSymbol;
       }
-      else {
+      else
         return null;
-      }
     }
 
     noMoreTurns() {
       var check = true;
+
       for (var i = 0; i < 3; i++)
       {
         for (var j = 0; j < 3; j++)
@@ -101,9 +101,8 @@ class TicTacToe {
       {
         return true;
       }
-      else {
+      else
         return false;
-      }
     }
 
     getFieldValue(rowIndex, colIndex) {
